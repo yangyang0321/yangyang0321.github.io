@@ -6,3 +6,152 @@
   <img src="Camera_XHS_1729766646405.jpg">
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的部落格</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>我的部落格</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#contact">聯絡我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="blog-posts">
+            <article class="post" onclick="showPost('post1')">
+                <h2>文章標題 1</h2>
+                <p class="summary">這是文章 1 的簡介，點擊查看完整內容...</p>
+            </article>
+            <article class="post" onclick="showPost('post2')">
+                <h2>文章標題 2</h2>
+                <p class="summary">這是文章 2 的簡介，點擊查看完整內容...</p>
+            </article>
+            <article class="post" onclick="showPost('post3')">
+                <h2>文章標題 3</h2>
+                <p class="summary">這是文章 3 的簡介，點擊查看完整內容...</p>
+            </article>
+        </section>
+
+        <section id="post-detail" class="hidden">
+            <button onclick="closePost()">關閉文章</button>
+            <h2 id="post-title">文章標題</h2>
+            <p id="post-content">這是文章的詳細內容。</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 我的部落格</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#blog-posts {
+    margin: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.post:hover {
+    background-color: #f9f9f9;
+}
+
+.summary {
+    color: #555;
+}
+
+#post-detail {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+
+#post-detail.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+function showPost(postId) {
+    const postTitle = document.getElementById('post-title');
+    const postContent = document.getElementById('post-content');
+    const postDetail = document.getElementById('post-detail');
+
+    // 根據不同的文章 ID 顯示相對應的內容
+    if (postId === 'post1') {
+        postTitle.textContent = '文章標題 1';
+        postContent.textContent = '這是文章 1 的詳細內容。';
+    } else if (postId === 'post2') {
+        postTitle.textContent = '文章標題 2';
+        postContent.textContent = '這是文章 2 的詳細內容。';
+    } else if (postId === 'post3') {
+        postTitle.textContent = '文章標題 3';
+        postContent.textContent = '這是文章 3 的詳細內容。';
+    }
+
+    // 顯示文章詳細內容區
+    postDetail.classList.remove('hidden');
+}
+
+function closePost() {
+    const postDetail = document.getElementById('post-detail');
+    postDetail.classList.add('hidden');
+}
