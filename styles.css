@@ -1,26 +1,26 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* 全域樣式 */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
-    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
+/* 標頭 */
 header {
     background-color: #333;
     color: white;
-    padding: 10px;
     text-align: center;
+    padding: 1rem;
 }
 
+/* 導航欄 */
 nav ul {
     list-style: none;
+    background-color: #444;
+    text-align: center;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -31,44 +31,73 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    padding: 10px 20px;
 }
 
-#blog-posts {
-    margin: 20px;
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 主要內容 */
+main {
+    padding: 20px;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .post {
     background-color: white;
     padding: 20px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
-.post:hover {
-    background-color: #f9f9f9;
+h2 {
+    font-size: 1.8rem;
+    color: #333;
 }
 
-.summary {
+p {
+    font-size: 1rem;
     color: #555;
 }
 
-#post-detail {
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
-    border: 1px solid #ddd;
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-#post-detail.hidden {
-    display: none;
+button:hover {
+    background-color: #444;
 }
 
+/* 文章詳細內容 */
+.post-detail {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* 底部 */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
