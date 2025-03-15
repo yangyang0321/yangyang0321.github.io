@@ -1,50 +1,20 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
+ <!DOCTYPE html>
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的部落格</title>
-    <link rel="stylesheet" href="style.css">  <!-- 連結CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>歡迎來到我的部落格</h1>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">首頁</a></li>
-            <li><a href="#">關於我</a></li>
-            <li><a href="#">聯繫我</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <div class="post-container">
-            <div class="post">
-                <h2>我的第一篇文章</h2>
-                <p>這是我的部落格的第一篇文章，歡迎閱讀！</p>
-                <button onclick="showDetails('post1')">閱讀更多</button>
-                <div id="post1" class="post-detail" style="display:none;">
-                    <p>這是文章的詳細內容，更多的內容可以根據需要來擴充。</p>
-                </div>
-            </div>
-
-            <div class="post">
-                <h2>我的第二篇文章</h2>
-                <p>這是我的第二篇文章，還有很多東西要學習。</p>
-                <button onclick="showDetails('post2')">閱讀更多</button>
-                <div id="post2" class="post-detail" style="display:none;">
-                    <p>這是第二篇文章的詳細內容，這裡可以加入更多的文字、圖片或影片。</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 我的部落格</p>
-    </footer>
-
-    <script src="script.js"></script> <!-- 連結JS -->
+    <div class="container" id="blogPosts">
+        <!-- 部落格文章將會動態載入 -->
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+  
+       
