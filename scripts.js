@@ -1,15 +1,19 @@
-// 顯示/隱藏文章詳情
-function showDetails(postId) {
-    const postDetail = document.getElementById(postId);
+document.addEventListener("DOMContentLoaded", function() {
+    const posts = [
+        { title: "我的第一篇文章", content: "這是我的第一篇部落格文章，歡迎閱讀！" },
+        { title: "學習JavaScript", content: "今天來分享一些關於JavaScript的學習心得。" }
+    ];
+
+    const blogContainer = document.getElementById("blogPosts");
     
-    // 使用 CSS transition 來實現平滑過渡
-    if (postDetail.style.display === "none" || postDetail.style.display === "") {
-        postDetail.style.display = "block";
-        postDetail.style.maxHeight = "500px"; // 設定最大高度，便於過渡效果
-    } else {
-        postDetail.style.maxHeight = "0"; // 隱藏時設為 0
-        setTimeout(() => {
-            postDetail.style.display = "none";
-        }, 300); // 延遲讓過渡動畫結束後再隱藏
-    }
-}
+    posts.forEach(post => {
+        const postElement = document.createElement("div");
+        postElement.classList.add("post");
+        postElement.innerHTML = `
+            <h2>${post.title}</h2>
+            <p>${post.content}</p>
+            <button onclick="alert('感謝閱讀！')">閱讀更多</button>
+        `;
+        blogContainer.appendChild(postElement);
+    });
+});
