@@ -1,19 +1,49 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const posts = [
-        { title: "我的第一篇文章", content: "這是我的第一篇部落格文章，歡迎閱讀！" },
-        { title: "學習JavaScript", content: "今天來分享一些關於JavaScript的學習心得。" }
-    ];
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.post {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.post h2 {
+    color: #333;
+}
+.post p {
+    color: #666;
+}
+.post button {
+    background: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.post button:hover {
+    background: #005f73;
+}
 
-    const blogContainer = document.getElementById("blogPosts");
-    
-    posts.forEach(post => {
-        const postElement = document.createElement("div");
-        postElement.classList.add("post");
-        postElement.innerHTML = `
-            <h2>${post.title}</h2>
-            <p>${post.content}</p>
-            <button onclick="alert('感謝閱讀！')">閱讀更多</button>
-        `;
-        blogContainer.appendChild(postElement);
-    });
-});
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
