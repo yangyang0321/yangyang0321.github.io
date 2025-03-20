@@ -1,49 +1,22 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-}
-.container {
-    width: 80%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.post {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-}
-.post h2 {
-    color: #333;
-}
-.post p {
-    color: #666;
-}
-.post button {
-    background: #008CBA;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.post button:hover {
-    background: #005f73;
-}
-
-footer {
-    text-align: center;
-    background: #333;
-    color: white;
-    padding: 10px 0;
-    margin-top: 20px;
-}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的部落格</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>歡迎來到我的部落格</h1>
+    </header>
+    <div class="container" id="blogPosts">
+        <!-- 部落格文章將會動態載入 -->
+    </div>
+    <footer>
+        <p>作者: 楊惠雅</p>
+        <p>聯絡我: <a href="mailto:你的電子郵件">huiyayang13@gmail.com</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
