@@ -15,7 +15,7 @@
     </div>
     <footer>
         <p>作者: 楊惠雅</p>
-        <p>聯絡我: <a href="mailto:你的電子郵件">huiyayang13@gmail.com</a></p>
+        <p>聯絡我: <a href="mailto:huiyayang13@gmail.com">huiyayang13@gmail.com</a></p>
     </footer>
     <script src="script.js"></script>
 </body>
