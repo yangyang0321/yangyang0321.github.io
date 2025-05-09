@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>饒平國小簡介</title>
+    <style>
+        body {
+            font-family: "微軟正黑體", sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #ddd;
+            text-align: center;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>歡迎來到饒平國小</h1>
+        <p>教育是點亮希望的火炬</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>學校簡介</h2>
+            <p>饒平國小位於台灣的一所充滿活力與關懷的國民小學，致力於提供優質的教育環境與多元的學習機會，讓每位學生都能發展潛能、快樂成長。</p>
+        </section>
+
+        <section>
+            <h2>歷史沿革</h2>
+            <p>饒平國小創立於民國50年代，初期設立於鄉間，服務當地農村子弟。隨著社會發展與教育普及，校園逐步擴建，教學設備日益完善。近年來，學校更積極推動資訊教育與國際交流，成為社區的重要學習中心。</p>
+        </section>
+
+        <section>
+            <h2>辦學理念</h2>
+            <ul>
+                <li>尊重多元、因材施教</li>
+                <li>推動品格教育與生活實踐</li>
+                <li>培養學生自學能力與合作精神</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>聯絡資訊</h2>
+            <p>地址：台灣某縣市某區某路123號</p>
+            <p>電話：(02) 1234-5678</p>
+            <p>學校網站：<a href="https://www.rpes.tp.edu.tw/" target="_blank">饒平國小官方網站</a></p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 饒平國小. 版權所有。
+    </footer>
+</body>
+</html>
