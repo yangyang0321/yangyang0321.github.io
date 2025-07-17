@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林本古厝介紹</title>
+  <style>
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #fbfcfd;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #7f8c8d;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    main {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      border-radius: 12px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin: 1em 0;
+    }
+    ul { line-height: 1.8; }
+    .map {
+      width: 100%;
+      height: 300px;
+      border: none;
+      margin: 1em 0;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>林本古厝</h1>
+    <p>莿桐在地的閩南傳統世家建築</p>
+  </header>
+
+  <main>
+    <h2>歷史背景</h2>
+    <p>
+      林本古厝為莿桐地區早期望族林家的宅邸，興建年代約在清末至日治初期。建築融合閩南式廳堂、三合院與磚雕、剪粘等工藝，見證當地的繁榮與文化傳承。
+    </p>
+
+    <img src="https://via.placeholder.com/800x400?text=%E6%9E%97%E6%9C%AC%E5%8F%A4%E5%8E%9B%E5%AF%A7%E5%BE%80%E7%8D%B2%E8%A6%8B" alt="林本古厝實景">
+
+    <h2>建築特色</h2>
+    <ul>
+      <li>中軸對稱三合院設計，前廳開闊，後寢豪宅典雅。</li>
+      <li>屋簷下保存有精緻木雕，用以描繪海水堆浪、蓮花等造型。</li>
+      <li>門楣與窗櫺有傳統花鳥剪粘，色彩鮮明，工藝細緻。</li>
+      <li>側院常見古樟樹與石刻，富含地方特色。</li>
+    </ul>
+
+    <h2>參觀資訊</h2>
+    <p>
+      📍 地址：雲林縣莿桐鄉（具體位置可洽社區管理單位）<br>
+      🕒 開放時間：假日開放，建議提前聯繫預約導覽<br>
+      💵 門票：部分由在地文化協會舉辦導覽活動收費或捐款支持修復<br>
+    </p>
+
+    <!-- 可替換為真實 embed Google Map 連結 -->
+    <iframe class="map"
+      src="https://maps.google.com/maps?q=23.71,120.54&hl=zh-TW&z=17&output=embed">
+    </iframe>
+
+    <h2>貼心提醒</h2>
+    <ul>
+      <li>參觀請保持安靜，愛護古建築不觸摸雕刻細節。</li>
+      <li>若有攝影需求，建議提前申請許可。</li>
+      <li>建議配合社區文化導覽，了解古厝背後的傳奇與故事。</li>
+      <li>現場若有文化活動（如燈會、古禮展演），亦適合順道參觀。</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 莿桐文化資產介紹網頁</p>
+  </footer>
+</body>
+</html>
